@@ -1,11 +1,11 @@
 pipeline {
 
-agents any
+agent any
 
-      stages {
+      stages{
       
          stage('BUILD') {
-             steps {
+             steps{
                       sh '''
                       sleep 5
                       echo "this is a build step"
