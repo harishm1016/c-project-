@@ -1,0 +1,39 @@
+pipeline {
+
+agents any
+
+      stages {
+      
+         stage('BUILD') {
+             steps {
+                      sh '''
+                      sleep 5
+                      echo "this is a build step"
+                      '''
+                   }
+            }
+   
+        
+         stage('TEST') {
+            steps {
+                      sh '''
+                      sleep 5
+                      echo "this is test stage"
+                      '''
+                   }
+             }
+             
+         stage('DEPLOY') {
+             steps {
+                      sh '''
+                      sleep 5
+                      echo "this is deploy stage"
+                      '''
+                    }
+                    
+              }
+              
+          }
+          
+     }
+             
