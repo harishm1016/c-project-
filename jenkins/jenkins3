@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('A') {
             steps{
-                catchError(buildResult: 'SUCCESS', stage_Result: 'FAILURE') {
+                catchError(buildResult: 'SUCCESS', stage_result: 'FAILURE') {
                     print "Stage A"
                     sh "exit 1"
                     script { stage_result = true }
